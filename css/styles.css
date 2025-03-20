@@ -222,7 +222,7 @@
     border-right: 2px solid rgba(255,255,255,0); /* Creates the line cursor*/
     max-width: fit-content;
     animation: typewriter 1s steps(30) 3s 1 normal both,
-               blinkTextCursor 500ms steps(35) 1.5s 5 normal;
+               blinkTextCursor 500ms steps(35) 0.5s 9 normal;
   }
   
   #welcome-section p:nth-of-type(2){
@@ -231,7 +231,7 @@
     border-right: 2px solid rgba(255,255,255,0); /* Creates the line cursor*/
     max-width: fit-content;
     animation: typewriter 4s steps(62) 6s 1 normal both,
-               blinkTextCursor 500ms steps(35) 5s 7 normal;
+               blinkTextCursor 500ms steps(35) 5s 9 normal;
   }
   
   
