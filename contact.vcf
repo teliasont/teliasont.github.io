@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Tayla Eliason
+N:Eliason;Tayla;;;
+ORG:Eastern Washington University
+TITLE:Web Assistant
+EMAIL;TYPE=INTERNET:teliason@ewu.edu
+URL:teliasont.github.io
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/teliasont
+X-SOCIALPROFILE;TYPE=github:https://github.com/teliasont
+ADR;TYPE=WORK:;;;Spokane;;USA
+END:VCARD
