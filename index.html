@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light"> <!--data-motionPreference="no-preference"-->
 
 <head>
   <meta charset="UTF-8">
@@ -8,21 +8,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <!---FAVICON LINKS-->
-  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-<link rel="shortcut icon" href="/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Rad Sites" />
-<link rel="manifest" href="/favicon/site.webmanifest" />
+<link rel="manifest" href="favicon/site.webmanifest" />
 
-  <link href="/css/styles.css" rel="stylesheet">
-  <title>Tayla's Rad Sites</title>
+  <link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/script.js" defer></script>
+<img src="assets/images/hero-image.jpg" alt="...">
+  <title>Rad Stuff</title>
 </head>
 
 <body>
   <nav id="navbar">
-    <img src="/assets/Star Logo.png" alt="star logo">
+    <img src="favicon/favicon.svg" alt="star logo">
     <!--Replace this with an image in a folder in github-->
     <input type="checkbox" id="menu-toggle">
 
@@ -36,42 +41,137 @@
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li> <!--I'll make the button look prettier later. I just want to get this doneeeeeeeee-->
+        <!--<button class="theme-toggle" >Toggle Theme</button>-->
+<div class="dropdown">
+          <button class="dropbtn">
+            <svg viewBox="-100 -100 200 200" class="star">
+              <g transform="translate(0 5)">
+                <g> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(72)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(-72)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(144)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(-144)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+              </g>
+            </svg>
+          </button>
+          
+          <div class="dropdown-content">
+            <a href="#" data-theme="system" class="active">
+              <svg viewBox="0 0 20 20" class="systemTheme">
+                <circle cx="10" cy="10" r="5" fill="none" class="currentStroke" stroke-width="1.5" />
+                <path d=" M 10,5  L 10,15  A 5,5 0 0 0 10,5"  stroke="none"  class="currentStroke currentFill"/>
+              </svg>    
+              <span>System</span>
+            </a>
+            <a href="#" data-theme="light" class="">
+              <svg viewBox="-100 -100 200 200" class="star">
+              <g transform="translate(0 5)">
+                <g> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(72)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(-72)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(144)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(-144)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+              </g>
+            </svg>
+              <span>Light</span>
+            </a>
+            <a href="#" data-theme="dark" class="">
+              <svg viewBox="0 0 375 300">
+                <circle class="currentStroke"  cx="200" cy="140" r="60" fill="none" stroke-width="25" />
+                <ellipse class="currentStroke currentFill"  cx="200"  cy="150"  rx="180"   ry="8"  stroke-width="5"/>
+                <path fill="none" class="currentStroke" stroke-width="15" d=" M 143,122  Q 115,150   60,150"/>
+                <path fill="none" class="currentStroke" stroke-width="15"  d=" M 257,122 Q 285,150  340,150"  />
+              </svg>
+              <span>Dark</span>
+            </a>
+          </div>
+        </div>
+
+
+
+  <!--
+        <div class="theme-dropdown">
+  
+          <button class="theme-trigger">
+              <svg viewBox="-100 -100 200 200" class="star">
+              <g transform="translate(0 5)">
+                <g> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(72)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(-72)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(144)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                <g transform="rotate(-144)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+              </g>
+            </svg>
+            <span>Theme</span>
+          </button>
+  
+          <div class="theme-menu">
+            <button data-theme="system">
+              <svg viewbox="0 0 20 20" class="systemTheme">
+                <circle cx="10" cy="10" r="5" fill="none" class="currentStroke" stroke-width="1.5" />
+                <path d=" M 10,5  L 10,15  A 5,5 0 0 0 10,5"  stroke="none"  class="currentStroke currentFill"/>
+              </svg>       
+              System
+            </button>
+  
+            <button data-theme="light"> 
+              <svg width="24" height="24" viewBox="-150 -150 250 250" class="star">
+                <g transform="translate(0 5)">
+                  <g> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                  <g transform="rotate(72)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                  <g transform="rotate(-72)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                  <g transform="rotate(144)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                  <g transform="rotate(-144)"> <polygon points="0,0 26,-25 0,-100 -26,-25 0,0" class="currentFill" /> </g>
+                </g>
+              </svg>
+              Light
+            </button>
+   
+            <button data-theme="dark">
+              <svg viewBox="0 0 375 300">
+                <circle class="currentStroke"  cx="200" cy="140" r="60" fill="none" stroke-width="25" />
+                <ellipse class="currentStroke currentFill"  cx="200"  cy="150"  rx="180"   ry="8"  stroke-width="5"/>
+                <path fill="none" class="currentStroke" stroke-width="15" d=" M 143,122  Q 115,150   60,150"/>
+                <path fill="none" class="currentStroke" stroke-width="15"  d=" M 257,122 Q 285,150  340,150"  />
+              </svg>
+              Dark
+            </button>
+          </div>
+        </div>
+      -->
+      </li>
+    <!--  <li>
+        <button id="toggleMotion">Reduce Motion</button>
+      </li> -->
     </ul>
   </nav>
 
   <!-----WELCOME SECTION----->
   <section id="welcome-section">
-    <div class="space-container">
-      <div class="space stars1"></div>
-      <div class="space stars2"></div>
-      <div class="space stars3"></div>
-    </div>
+    
 
     <h1>Yo, you want to see something cool?</h1>
     <p>No?</p>
-    <p>Well I’m going to do it anyway.</p>
+    <p>Well I'm going to do it anyway.</p>
 
     <!--The height of the welcome section should be equal to the height of the viewport-->
   </section>
+<div class="space-container">
+      <div class="space stars1"></div>
+      <div class="space stars2"></div>
+      <div class="space stars3"></div>
+      <div class="space stars4"></div>
+    </div>
 
   <!-----ABOUT SECTION----->
   <section id="about">
     <div class="picture-container">
-      <img src="/assets/Tayla City Blocks_2.jpg" alt="It's a picture of me!">
-      <!-- //I managed to code the cool effect I had in my Figma file, but it doesn't work in responsive design 🥺
-       // I'm commenting it out for now-
-      <div class="circle-container">
-        <div class="cool-semicircle">
-          <div class="semicircle"></div>
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class=" line line-3"></div>
-        </div>
-      </div> -->
+      <img src="assets/images/Tayla City Blocks_2.jpg" alt="It's a picture of me!">
     </div>
     <div class="text-container">
       <h2>Hi. I'm Tayla</h2>
-      <p>I’m a computer science and design major at EWU. I love silly photos and I almost always have at least one book on me. I’ve made some rad sites for you to check out.</p>
+      <p>I'm a computer science and design major at EWU. I love silly photos and I almost always have at least one book on me. I've made some rad sites for you to check out.</p>
       <p>Stay fresh ✌️</p>
     </div>
   </section>
@@ -81,7 +181,7 @@
           <div class="project-tile"><a href="https://balatro-boosters.netlify.app/" target="_blank">
               <div class="project-image">
                 <!--Balatro Booster Landing Page-->
-                <img src="/assets/Balatro Boosters Thumbnail.png" alt="Balatro Boosters Landing Page Preview">
+                <img src="assets/images/Balatro Boosters Thumbnail.png" alt="Balatro Boosters Landing Page Preview">
                 <div class="thumbnail-bg"></div>
               </div>
               <!--End project-image div-->
@@ -91,7 +191,7 @@
           <div class="project-tile"><a href="https://des-rocs-tribute.netlify.app/" target="_blank">
               <div class="project-image">
                 <!--Des Rocs Tribute Page-->
-                <img src="/assets/Des Rocs Tribute Thumbnail.png" alt="Des Rocs Tribute Page Preview">
+                <img src="assets/images/Des Rocs Tribute Thumbnail.png" alt="Des Rocs Tribute Page Preview">
                 <div class="thumbnail-bg"></div>
               </div>
               <!--End project-image div-->
@@ -101,7 +201,7 @@
           <div class="project-tile"><a href="https://red-rising-tech-doc-te.netlify.app/" target="_blank">
               <div class="project-image">
                 <!--Red Rising Technical Documentation Page-->
-                <img src="/assets/Red Rising Tech Doc Thumbnail.png" alt="Red Rising Technical Documentation Page">
+                <img src="assets/images/Red Rising Tech Doc Thumbnail.png" alt="Red Rising Technical Documentation Page">
                 <div class="thumbnail-bg"></div>
               </div>
               <!--End project-image div-->
@@ -111,7 +211,7 @@
           <div class="project-tile"><a href="https://star-wars-survey-te.netlify.app/" target="_blank">
               <div class="project-image">
                 <!--Star Wars Questionaire-->
-                <img src="/assets/Star Wars Questionnaire Thumbnail.png" alt="Star Wars Questionnaire">
+                <img src="assets/images/Star Wars Questionnaire Thumbnail.png" alt="Star Wars Questionnaire">
                 <div class="thumbnail-bg"></div>
               </div>
               <!--End project-image div-->
@@ -119,7 +219,7 @@
           <!--End project-thumbnail div-->
       </section>
         <!-- The projects section should contain at least one element with a class of project-tile to hold a project-->
-  </section>
+
   <footer id="contact">
 
     <div class="contact-div">
@@ -134,6 +234,7 @@
     </div>
   </footer>
 
+  <script src="scripts/scripts.js" defer></script>
 </body>
 
 </html>
