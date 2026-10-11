@@ -514,6 +514,7 @@
   .project-card {
   
     width: 40%;
+    padding: 5%;
     /* max-height: 600px; */
      min-width: 250px;
   max-width: 400px;
@@ -521,15 +522,21 @@
     max-height: 600px;
     height: 100%;
     border: 2px solid lightseagreen;
+    
+    margin-bottom: 30px;
    
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     overflow: hidden;
     
   }
 
+  .project-card p{
+      margin-bottom: var(--size16);
+  }
 
   .project-card a, .project-card p{
     text-decoration: none;
@@ -543,12 +550,17 @@
   
   #projects img {
     margin: 0 auto;
-    width: 95%;
-    max-width: 1000px;
+    width: 70%;
+    max-width: 400px;
     z-index: 1;
     /* outline: 10px solid var(--surface__card); */
     /* outline-offset: -10px; */
   }
+
+  .chrome-dino{
+  filter: brightness(1000%);
+}
+
   
   
   /*-----CONTACT STYLING-----*/
